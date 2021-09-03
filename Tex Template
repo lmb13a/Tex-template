@@ -1,0 +1,38 @@
+\documentclass[12]{amsart}
+\usepackage{amsmath, amsfonts, amssymb,color, epsfig,enumerate}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{tikz-cd,mathtools}
+\usepackage{pgfplots}
+\pgfplotsset{width=5cm,compat=1.9}
+\usepackage{dcolumn}
+\newcolumntype{2}{D{.}{}{2.0}}
+
+\input{settings}
+\input{makros1}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem{case}{Case}
+
+\let\oldtocsection=\tocsection
+
+\let\oldtocsubsection=\tocsubsection
+
+\let\oldtocsubsubsection=\tocsubsubsection
+
+\renewcommand{\tocsection}[2]{\hspace{0em}\oldtocsection{#1}{#2}}
+\renewcommand{\tocsubsection}[2]{\hspace{2em}\oldtocsubsection{#1}{#2}}
+\renewcommand{\tocsubsubsection}[2]{\hspace{4em}\oldtocsubsubsection{#1}{#2}}
+\title{Homework ?}
+\author{Livia Betti}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\end{document}
